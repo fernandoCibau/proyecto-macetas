@@ -3,9 +3,9 @@
 
 /* Creando style de productos */
 
-section{
+.sectionRelative{
     position: relative;
-    top: 20vh; 
+    top: 30vh; 
     .containerProductos{
         background-color: #fff;
         width: 95%;
@@ -122,7 +122,6 @@ section{
 
                     }
                 }
-                
             }
             .box:hover{
                 box-shadow: 1px 1px 10px 1px #868181;
