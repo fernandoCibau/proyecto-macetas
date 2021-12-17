@@ -402,21 +402,19 @@ footer .container .row .col p a {
 }
 
 /* Creando style de productos */
-.containerProductos {
-  background: #fff;
+section {
+  position: relative;
+  top: 20vh;
+}
+section .containerProductos {
+  background-color: #fff;
   width: 95%;
   max-width: 1000px;
-  margin: 30em auto;
+  margin: 10em auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /* div
-  {
-      background: #fff;
-      padding: 10px;
-      border: 1px solid #000000;
-  } */
 }
-.containerProductos .banner {
+section .containerProductos .banner {
   grid-column: 1/6;
   background: #0c0b0b;
   opacity: 0.8;
@@ -429,23 +427,35 @@ footer .container .row .col p a {
   align-items: center;
   margin-top: 0px;
 }
-.containerProductos .banner .vertical {
-  border-right: 2px solid #ff0000;
+@media only screen and (max-width: 575px) {
+  section .containerProductos .banner {
+    display: none;
+  }
+}
+section .containerProductos .banner .vertical {
+  border-right: 3px solid #ff0000;
   display: flex;
   justify-content: space-between;
 }
-.containerProductos .banner .vertical .span2,
-.containerProductos .banner .vertical .bannerTitle {
-  border: 1px solid white;
+section .containerProductos .banner .vertical .span2,
+section .containerProductos .banner .vertical .bannerTitle {
   margin: 0;
 }
-.containerProductos .formulario {
+section .containerProductos .banner .vertical .span2 {
+  align-items: center;
+  justify-items: center;
+}
+section .containerProductos .formulario {
   margin-top: 1em;
   grid-column: span 2;
-  border: 2px solid black;
   width: 80%;
 }
-.containerProductos .div1 {
+@media only screen and (max-width: 575px) {
+  section .containerProductos .formulario {
+    display: none;
+  }
+}
+section .containerProductos .div1 {
   grid-column: span 3;
   display: flex;
   margin-top: 1em;
@@ -454,8 +464,17 @@ footer .container .row .col p a {
   margin-right: 15px;
   flex-wrap: wrap;
 }
-.containerProductos .div1 .box {
-  border: 1px solid black;
+@media only screen and (max-width: 575px) {
+  section .containerProductos .div1 {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    grid-column: 1/6;
+    gap: 1em;
+  }
+}
+section .containerProductos .div1 .box {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 8px;
@@ -466,14 +485,23 @@ footer .container .row .col p a {
   margin-left: 20px;
   flex: 0 30%;
 }
-.containerProductos .div1 .box .card img {
-  width: 150px;
-  height: 200px;
+@media only screen and (max-width: 575px) {
+  section .containerProductos .div1 .box {
+    gap: 10em;
+    flex: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
 }
-.containerProductos .div1 .box .card div .card-text {
+section .containerProductos .div1 .box .card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+section .containerProductos .div1 .box .card div .card-text {
   box-sizing: border-box;
 }
-.containerProductos .div1 .box .card div .button {
+section .containerProductos .div1 .box .card div .button {
   background-color: #3483fa;
   border-color: transparent;
   color: #fff;
@@ -483,6 +511,9 @@ footer .container .row .col p a {
   padding: 5px auto;
   width: 100%;
   height: 40px;
+}
+section .containerProductos .div1 .box:hover {
+  box-shadow: 1px 1px 10px 1px #868181;
 }
 
 #mainContactos {
