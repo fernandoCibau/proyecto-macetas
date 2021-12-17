@@ -626,6 +626,13 @@ form .boton:hover {
     font-size: var(--fontsXs);
   }
 }
+@media screen and (max-width: 768px) {
+  .direcContainer div {
+    border: solid 2px gray;
+    margin: 1rem auto;
+    width: auto;
+  }
+}
 .direcContainer div h4 {
   padding: 1rem;
 }
