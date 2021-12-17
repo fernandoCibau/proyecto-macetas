@@ -409,7 +409,6 @@ footer .container .row .col p a {
 .sectionRelative .containerProductos {
   background-color: #fff;
   width: 95%;
-  max-width: 1000px;
   margin: 10em auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -420,11 +419,9 @@ footer .container .row .col p a {
   opacity: 0.8;
   color: #FFFFFF;
   width: 80%;
-  margin: 1em auto;
+  margin: 1rem auto;
   display: flex;
   justify-content: space-around;
-  height: 100%;
-  align-items: center;
   margin-top: 0px;
 }
 @media only screen and (max-width: 575px) {
@@ -439,16 +436,17 @@ footer .container .row .col p a {
 }
 .sectionRelative .containerProductos .banner .vertical .span2,
 .sectionRelative .containerProductos .banner .vertical .bannerTitle {
-  margin: 0;
+  margin: 1rem;
 }
 .sectionRelative .containerProductos .banner .vertical .span2 {
   align-items: center;
   justify-items: center;
 }
 .sectionRelative .containerProductos .formulario {
-  margin-top: 1em;
+  margin-top: 1rem;
   grid-column: span 2;
   width: 80%;
+  justify-content: flex-start;
 }
 @media only screen and (max-width: 575px) {
   .sectionRelative .containerProductos .formulario {

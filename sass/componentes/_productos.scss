@@ -9,7 +9,7 @@
     .containerProductos{
         background-color: #fff;
         width: 95%;
-        max-width: 1000px;
+        // max-width: 1000px;
         margin: 10em auto;
         display: grid;
         grid-template-columns:repeat(5, 1fr);
@@ -21,11 +21,11 @@
             opacity: 0.8;
             color: #FFFFFF;
             width: 80%;
-            margin: 1.0em auto;
+            margin: 1.0rem auto;
             display: flex;
             justify-content: space-around;
-            height: 100%;
-            align-items: center;
+            // height: 100%;
+            // align-items: center;
             margin-top: 0px;
             @media only screen and(max-width:575px){
                 display: none;
@@ -38,7 +38,7 @@
                 .span2, 
                 .bannerTitle
                 {
-                    margin: 0;
+                    margin: 1rem;
                 }
                 .span2{
                     align-items: center;
@@ -49,9 +49,10 @@
         }
         .formulario
         {
-            margin-top: 1em;
+            margin-top: 1rem;
             grid-column: span 2;
             width: 80%;
+            justify-content: flex-start;
             @media only screen and(max-width:575px){
                 display: none;
             }
@@ -94,7 +95,6 @@
                     margin-left: 0px;
                     
                 }
-
                 .card
                 {
                     img
@@ -119,7 +119,6 @@
                             width: 100%;
                             height: 40px;
                         }
-
                     }
                 }
             }
