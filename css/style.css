@@ -246,21 +246,6 @@ body .whatsapp:hover {
   width: auto;
   height: 45vh;
 }
-.foto-1 .card .btn {
-  opacity: 0;
-  width: 100%;
-  padding: 10rem;
-  position: absolute;
-  bottom: 0;
-  margin-left: -16px;
-}
-.foto-1 .card .btn:hover {
-  transform: translateY(60px);
-  transition: all 0.5s linear;
-  padding: 1rem;
-  opacity: 1;
-  background: #001e2d;
-}
 
 .foto-2 {
   background-color: #fff;
@@ -388,7 +373,7 @@ footer .container .row .col p a {
 }
 .sectionRelative .containerProductos {
   background-color: #fff;
-  width: 90%;
+  width: 95%;
   margin: 10em auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -399,22 +384,27 @@ footer .container .row .col p a {
   opacity: 0.8;
   color: #FFFFFF;
   width: 100%;
-  margin: 1rem auto;
+  margin: 0rem auto;
   display: flex;
-  justify-content: space-around;
-  margin-top: 0px;
 }
 @media only screen and (max-width: 575px) {
   .sectionRelative .containerProductos .banner {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 .sectionRelative .containerProductos .banner .vertical {
   border-right: 3px solid #ff0000;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.sectionRelative .containerProductos .banner .vertical .span2,
+@media only screen and (max-width: 575px) {
+  .sectionRelative .containerProductos .banner .vertical {
+    border-bottom: 3px solid #ff0000;
+    border-right: none;
+  }
+}
 .sectionRelative .containerProductos .banner .vertical .bannerTitle {
   margin: 1rem;
 }
@@ -425,7 +415,7 @@ footer .container .row .col p a {
 .sectionRelative .containerProductos .formulario {
   margin-top: 1rem;
   grid-column: span 2;
-  width: 80%;
+  width: 65%;
   justify-content: flex-start;
 }
 @media only screen and (max-width: 575px) {
@@ -436,11 +426,9 @@ footer .container .row .col p a {
 .sectionRelative .containerProductos .div1 {
   grid-column: span 3;
   display: flex;
-  margin-top: 1em;
-  padding: -10px;
-  margin-left: -30px;
-  margin-right: 15px;
   flex-wrap: wrap;
+  margin-top: 1em;
+  width: 100%;
 }
 @media only screen and (max-width: 575px) {
   .sectionRelative .containerProductos .div1 {
@@ -456,19 +444,15 @@ footer .container .row .col p a {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 8px;
-  padding: 0;
-  height: auto;
-  min-height: 355px;
-  margin-top: 10px;
-  margin-left: 20px;
-  flex: 0 30%;
+  margin: 1rem auto;
 }
-@media only screen and (max-width: 575px) {
-  .sectionRelative .containerProductos .div1 .box {
-    gap: 10em;
-    flex: 100%;
-    margin-top: 0px;
-    margin-left: 0px;
+.sectionRelative .containerProductos .div1 .box .card {
+  width: 18rem;
+  height: 70vh;
+}
+@media only screen and (max-width: 1444px) {
+  .sectionRelative .containerProductos .div1 .box .card {
+    height: 100vh;
   }
 }
 .sectionRelative .containerProductos .div1 .box .card img {
@@ -478,17 +462,18 @@ footer .container .row .col p a {
 }
 .sectionRelative .containerProductos .div1 .box .card .card-body .card-text {
   box-sizing: border-box;
+  font-size: var(--fontsMediun);
 }
 .sectionRelative .containerProductos .div1 .box .card .card-body .button {
   background-color: #3483fa;
   border-color: transparent;
   color: #fff;
   border-radius: 5px;
-  cursor: pointer;
-  margin: 2px auto;
-  padding: 5px auto;
+  padding: 5px;
   width: 100%;
-  height: 40px;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0;
 }
 .sectionRelative .containerProductos .div1 .box:hover {
   box-shadow: 1px 1px 10px 1px #868181;
