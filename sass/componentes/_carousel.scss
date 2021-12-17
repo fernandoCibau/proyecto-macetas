@@ -26,6 +26,13 @@ article{
         font-weight:lighter;
         margin: 2rem auto;
         text-align: center;
+        p{
+            font-size: var(--fontsMediun);
+            @media only screen and(max-width:320px){
+                font-size: var(--fontsXs)
+            }
+            
+        }
     }
 }
 /* FIN CAROUSEL / TIERRA */

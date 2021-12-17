@@ -6,10 +6,10 @@
 .sectionRelative{
     position: relative;
     top: 30vh; 
+    margin: 0 0 30rem 0;
     .containerProductos{
         background-color: #fff;
-        width: 95%;
-        // max-width: 1000px;
+        width: 90%;
         margin: 10em auto;
         display: grid;
         grid-template-columns:repeat(5, 1fr);
@@ -20,7 +20,7 @@
             background: #0c0b0b;
             opacity: 0.8;
             color: #FFFFFF;
-            width: 80%;
+            width: 100%;
             margin: 1.0rem auto;
             display: flex;
             justify-content: space-around;
@@ -103,7 +103,7 @@
                     height: 200px;
                     border-radius: 8px;
                     }
-                    div {
+                    .card-body {
                         .card-text
                         {
                             box-sizing: border-box;
