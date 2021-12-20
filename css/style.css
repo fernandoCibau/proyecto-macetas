@@ -58,7 +58,6 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  max-width: auto;
   z-index: 1;
 }
 .headerContainer h1 {
@@ -741,63 +740,75 @@ form .boton:hover {
   }
 }
 
-.headerContainer .navContainerkk {
+.headerContainerkk {
+  background-color: var(--color3);
+  width: 100%;
+  height: 10vh;
+  top: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 1;
+}
+.headerContainerkk .navContainerkk {
   width: 100%;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
 }
-.headerContainer .navContainerkk h1 {
+.headerContainerkk .navContainerkk h1 {
+  /* word-break: break-all;  para que bajen de a una las letras */
+  /* box-shadow: rgb(0 0 0 / 50%) 12px 15px 13px;  para darle sombras a las cajas*/
+  font-size: var(--fontsLow);
+  font-family: var(--fontFamily);
+  color: var(--colorEnlaces);
+  width: 50%;
   padding: 0;
-  margin: 0;
+  margin: 0 auto 0 0;
 }
-.headerContainer .navContainerkk #check {
+@media only screen and (max-width: 680px) {
+  .headerContainerkk .navContainerkk h1 {
+    font-size: var(--fontsXs);
+  }
+}
+.headerContainerkk .navContainerkk #check {
   display: none;
 }
-.headerContainer .navContainerkk #check:checked ~ .navNav {
+.headerContainerkk .navContainerkk #check:checked ~ .navNav {
   display: block;
 }
-.headerContainer .navContainerkk .check {
+.headerContainerkk .navContainerkk .check {
   margin: 0 10%;
   height: 0;
   cursor: pointer;
 }
-.headerContainer .navContainerkk .check .fas {
+.headerContainerkk .navContainerkk .check .fas {
   color: #fff;
 }
-.headerContainer .navContainerkk ul {
+.headerContainerkk .navContainerkk ul {
   display: none;
   position: absolute;
   width: 100%;
   height: 60vh;
-  top: 5rem;
+  top: 3.1rem;
   left: 0rem;
   background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
 }
-@media only screen and (max-width: 768px) {
-  .headerContainer .navContainerkk ul {
-    top: 4.8rem;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .headerContainer .navContainerkk ul {
-    top: 3.5rem;
-  }
-}
-.headerContainer .navContainerkk ul li {
+.headerContainerkk .navContainerkk ul li {
   line-height: 4rem;
   list-style: none;
-  flex-wrap: wrap;
 }
-.headerContainer .navContainerkk ul a {
+.headerContainerkk .navContainerkk ul a {
   color: var(--color2);
+  text-decoration: none;
 }
 
 .novedadesContainer {
   display: grid;
   grid-template-areas: "carrusel carrusel carrusel carrusel" "video video video video" "foto1 foto1 foto2 foto2" "foto3 foto3 fotoGuion fotoGuion" "foto3 foto3 fotoA fotoB" "banner banner banner banner";
-  margin-top: 6rem;
+  margin-top: 0rem;
 }
 
 .carrusel {
