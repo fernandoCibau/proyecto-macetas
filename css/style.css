@@ -120,6 +120,9 @@
     width: 100%;
   }
 }
+.headerContainer .navContainer ul li {
+  list-style: none;
+}
 .headerContainer .navContainer ul a {
   color: var(--colorEnlaces);
   font-size: var(--fontsMediun);
@@ -162,97 +165,24 @@ body .whatsapp:hover {
   transform: rotate(380deg) scale(2);
 }
 
-.destacadosContainer {
-  display: grid;
-  grid-template-areas: "carrusel carrusel carrusel carrusel" "video video video video" "foto1 foto1 foto2 foto2" "foto3 foto3 fotoGuion fotoGuion" "foto3 foto3 fotoA fotoB" "banner banner banner banner";
-  margin-top: 10rem;
-}
-
-.carrusel {
-  grid-area: carrusel;
-  border: solid 2px red;
-  width: 100%;
-  margin: auto;
-}
-.carrusel .slide .carousel-inner .carousel-item img {
-  width: 100%;
-  height: 80vh;
-}
-
-.video {
-  grid-area: video;
-  border: solid 2px red;
-  width: 100%;
-}
-
-.foto1 {
-  grid-area: foto1;
-  border: solid 2px red;
-  width: 100%;
-}
-.foto1 img {
-  width: 100%;
-}
-
-.foto2 {
-  grid-area: foto2;
-  border: solid 2px red;
-  width: 100%;
-}
-.foto2 img {
-  width: 100%;
-}
-
-.foto3 {
-  grid-area: foto3;
-  border: solid 2px red;
-  width: 100%;
-  background-image: url(../../img/decoracion/mmmmmaaaaaaa.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-.foto3 img {
-  width: 100%;
-}
-
-.fotoGuion {
-  grid-area: fotoGuion;
-  border: solid 2px red;
-  width: 100%;
-  margin: auto;
-}
-.fotoGuion img {
-  width: 100%;
-  margin: auto;
-}
-
-.fotoA {
-  grid-area: fotoA;
-  border: solid 2px red;
-  width: 100%;
-}
-.fotoA img {
-  width: 100%;
-  margin: auto;
-}
-
-.fotoB {
-  grid-area: fotoB;
-  border: solid 2px red;
-  background: cadetblue;
-}
-
-.banner {
-  grid-area: banner;
-  border: solid 2px red;
-  width: 100%;
-}
-.banner img {
-  width: 100%;
-}
-
 /* Inicio Main */
+.iconoMovil {
+  background-image: url(https://i.ibb.co/PQjYd6h/favicon-16x16.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 3vh;
+  animation: movimiento 10s infinite linear alternate;
+}
+@keyframes movimiento {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
 .containerImg {
   padding-top: 0;
   display: flex;
@@ -269,7 +199,7 @@ body .whatsapp:hover {
 }
 @media only screen and (max-width: 768px) {
   .containerImg img {
-    margin: 8.5rem auto 2rem auto;
+    margin: 7rem auto 2rem auto;
   }
 }
 
@@ -482,18 +412,18 @@ article .kCarouselContainer img {
   border-radius: 1rem;
 }
 article .kCarouselContainer H3 {
-  color: var(--colorEnlaces);
+  color: var(--color2);
   text-align: center;
   margin: 1rem auto;
 }
 article .kParrafoContainer {
-  color: var(--color2);
-  font-weight: lighter;
   margin: 2rem auto;
   text-align: center;
 }
 article .kParrafoContainer p {
   font-size: var(--fontsMediun);
+  color: var(--colorEnlaces);
+  font-weight: bolder;
 }
 @media only screen and (max-width: 320px) {
   article .kParrafoContainer p {
@@ -513,6 +443,9 @@ article .kParrafoContainer p {
     flex-direction: column;
     align-items: center;
   }
+}
+.sectionMapaContainer .mapa {
+  width: 100%;
 }
 
 /* FIN FORMULARIO /UBICACION */
@@ -806,6 +739,150 @@ form .boton:hover {
     margin: 1rem auto;
     font-size: var(--fontsXs);
   }
+}
+
+.headerContainer .navContainerkk {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.headerContainer .navContainerkk h1 {
+  padding: 0;
+  margin: 0;
+}
+.headerContainer .navContainerkk #check {
+  display: none;
+}
+.headerContainer .navContainerkk #check:checked ~ .navNav {
+  display: block;
+}
+.headerContainer .navContainerkk .check {
+  margin: 0 10%;
+  height: 0;
+  cursor: pointer;
+}
+.headerContainer .navContainerkk .check .fas {
+  color: #fff;
+}
+.headerContainer .navContainerkk ul {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 60vh;
+  top: 5rem;
+  left: 0rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .headerContainer .navContainerkk ul {
+    top: 4.8rem;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .headerContainer .navContainerkk ul {
+    top: 3.5rem;
+  }
+}
+.headerContainer .navContainerkk ul li {
+  line-height: 4rem;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.headerContainer .navContainerkk ul a {
+  color: var(--color2);
+}
+
+.novedadesContainer {
+  display: grid;
+  grid-template-areas: "carrusel carrusel carrusel carrusel" "video video video video" "foto1 foto1 foto2 foto2" "foto3 foto3 fotoGuion fotoGuion" "foto3 foto3 fotoA fotoB" "banner banner banner banner";
+  margin-top: 6rem;
+}
+
+.carrusel {
+  grid-area: carrusel;
+  border: solid 2px red;
+  width: 100%;
+  margin: auto;
+}
+.carrusel .slide .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 80vh;
+}
+
+.video {
+  grid-area: video;
+  border: solid 2px red;
+  width: 100%;
+}
+
+.foto1 {
+  grid-area: foto1;
+  border: solid 2px red;
+  width: 100%;
+}
+.foto1 img {
+  width: 100%;
+}
+
+.foto2 {
+  grid-area: foto2;
+  border: solid 2px red;
+  width: 100%;
+}
+.foto2 img {
+  width: 100%;
+}
+
+.foto3 {
+  grid-area: foto3;
+  border: solid 2px red;
+  width: 100%;
+  height: 10rem;
+  background-image: url(../../img/decoracion/mmmmmaaaaaaa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.foto3 img {
+  width: 100%;
+}
+
+.fotoGuion {
+  grid-area: fotoGuion;
+  border: solid 2px red;
+  width: 100%;
+  margin: auto;
+}
+.fotoGuion img {
+  width: 100%;
+  margin: auto;
+}
+
+.fotoA {
+  grid-area: fotoA;
+  border: solid 2px red;
+  width: 100%;
+}
+.fotoA img {
+  width: 100%;
+  margin: auto;
+}
+
+.fotoB {
+  grid-area: fotoB;
+  border: solid 2px red;
+  background: cadetblue;
+}
+
+.banner {
+  grid-area: banner;
+  border: solid 2px red;
+  width: 100%;
+}
+.banner img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

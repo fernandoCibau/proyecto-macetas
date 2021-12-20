@@ -1,0 +1,157 @@
+// // INICIO NOVEDADES
+.headerContainer{
+
+    .navContainerkk{
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        justify-content:space-between;
+        h1{
+            padding: 0;
+            margin: 0;
+        }
+        #check{
+            display: none;
+            &:checked ~ .navNav {
+                display: block;
+            }
+        }
+        .check{
+            margin: 0 10%;
+            height: 0;
+            cursor: pointer;
+            .fas{
+                color: #fff;
+            }
+        }
+        ul{
+            display:none;
+            position:absolute;
+            width: 100%;
+            height: 60vh;
+            top: 5rem;
+            left: 0rem;
+            background-color: rgba(0, 0, 0, .70);
+            text-align: center;
+            
+            @media only screen and(max-width:768px){
+                top: 4.8rem;
+            }
+            @media only screen and(max-width:425px){
+                top: 3.5rem;
+            }
+            li{
+                line-height: 4rem;
+                list-style: none;
+                flex-wrap: wrap;
+                
+            }
+            a{
+                color: var(--color2);
+                
+            }
+        }
+    }
+}
+
+// INICIO DE DESTACADOS
+
+.novedadesContainer{
+        display: grid;
+        grid-template-areas: 
+        "carrusel carrusel carrusel carrusel"
+        "video video video video"
+        "foto1 foto1 foto2 foto2"
+        "foto3 foto3 fotoGuion fotoGuion"
+        "foto3 foto3 fotoA fotoB"
+        "banner banner banner banner";
+        margin-top: 6rem;
+
+    }
+    .carrusel{
+        grid-area: carrusel;
+        border: solid 2px red;
+        width: 100%;
+        margin: auto;
+        .slide{
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        width: 100%;
+                        height: 80vh;
+                    }
+                }
+            }
+        }
+    }
+    .video{
+        grid-area: video;
+        border: solid 2px red;
+        width: 100%;
+    }
+    .foto1{
+        grid-area: foto1;
+        border: solid 2px red;
+        width: 100%;
+        img{
+            width: 100%;
+            
+        }
+    }
+    .foto2{
+        grid-area: foto2;
+        border: solid 2px red;
+        width: 100%;
+        img{
+            width: 100%;
+            
+        }
+    }
+    .foto3{
+        grid-area: foto3;
+        border: solid 2px red;
+        width: 100%;
+        height: 10rem;
+        background-image: url(../../img/decoracion/mmmmmaaaaaaa.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        img{
+            width: 100%;
+            
+        }
+    }
+    .fotoGuion{
+        grid-area: fotoGuion;
+        border: solid 2px red;
+        width: 100%;
+        margin: auto;
+        img{
+            width: 100%;
+            margin: auto;
+        }
+    }
+    .fotoA{
+        grid-area: fotoA;
+        border: solid 2px red;
+        width: 100%;
+        img{
+            width: 100%;
+            margin: auto;
+        }
+    }
+    .fotoB{
+        grid-area: fotoB;
+        border: solid 2px red;
+        background: cadetblue;
+    
+    
+    }
+    .banner{
+        grid-area: banner;
+        border: solid 2px red;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }

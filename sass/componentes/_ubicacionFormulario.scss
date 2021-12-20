@@ -4,20 +4,15 @@
 /* INICIO FORMULARIO /UBICACION */
 
 .sectionMapaContainer{
-    // display: flex;
-    // justify-content:space-evenly ;
-    // padding: 3rem;
-    // background-color: transparent;
     color: var(--color2);
     text-align: center;
-
-
     @media only screen and (max-width:790px){
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
-    //
+    .mapa{
+        width:100% 
+    }
 }
 /* FIN FORMULARIO /UBICACION */
