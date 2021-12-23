@@ -67,7 +67,7 @@
     }
 }
 
-// INICIO DE DESTACADOS
+// INICIO DE NOVEDADES
 
 .novedadesContainer{
         display: grid;
@@ -101,6 +101,10 @@
         grid-area: video;
         border: solid 2px red;
         width: 100%;
+        video{
+            width: 100%;
+        }
+
     }
     .foto1{
         grid-area: foto1;

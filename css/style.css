@@ -25,6 +25,13 @@
   --colorBujia: #2d3323ab;
 }
 
+.contactosContainer .boton {
+  background-color: #fff;
+}
+.contactosContainer .boton:hover {
+  background: #a3ebd5;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -643,35 +650,35 @@ form .nombre {
   background: #f8f8f8;
 }
 form .nombre:hover {
-  background: #fff;
+  background: #a3ebd5;
 }
 form .whatsappForm {
   width: 50%;
   background: #f8f8f8;
 }
 form .whatsappForm:hover {
-  background: #fff;
+  background: #a3ebd5;
 }
 form .email {
   width: 50%;
   background: #f8f8f8;
 }
 form .email:hover {
-  background: #fff;
+  background: #a3ebd5;
 }
 form .telefono {
   width: 50%;
   background: #f8f8f8;
 }
 form .telefono:hover {
-  background: #fff;
+  background: #a3ebd5;
 }
 form .asunto {
   width: 100%;
   background: #f8f8f8;
 }
 form .asunto:hover {
-  background: #fff;
+  background: #a3ebd5;
 }
 form .mensaje {
   width: 100%;
@@ -679,7 +686,7 @@ form .mensaje {
   background: #f8f8f8;
 }
 form .mensaje:hover {
-  background: #fff;
+  background: #a3ebd5;
 }
 @media screen and (max-width: 320px) {
   form .mensaje {
@@ -691,9 +698,6 @@ form .mensaje:hover {
 }
 form .boton {
   width: 15%;
-}
-form .boton:hover {
-  background: #fff;
 }
 @media screen and (max-width: 320px) {
   form .boton {
@@ -825,6 +829,9 @@ form .boton:hover {
 .video {
   grid-area: video;
   border: solid 2px red;
+  width: 100%;
+}
+.video video {
   width: 100%;
 }
 
