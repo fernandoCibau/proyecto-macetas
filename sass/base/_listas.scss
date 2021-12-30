@@ -4,14 +4,13 @@
 $colores:
 red,
 #fff,
-rgb(163, 235, 213)
+rgb(163, 235, 213),
+#001e2d
 ;
 
 // BOTON DE CONTACTOS
 .contactosContainer{
     
-
-
     .boton {
         background-color: nth($colores , 2 );
         &:hover{

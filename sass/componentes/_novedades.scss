@@ -1,174 +1,255 @@
 
 
 // // INICIO NOVEDADES
-
-.headerContainerkk{
-    background-color: var(--color3);
-    width: 100%;
-    height: 10vh;
-    top: 0;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    position: fixed;
-    z-index: 1;
-
-    .navContainerkk{
+.bodyNovedades{
+    background-image:radial-gradient( circle at 50% 50%, rgb(191, 230, 222) 0.1%, rgba(11, 59, 53, 0.726) 100% );
+    margin: auto;
+    .headerContainerkk{
+        background-color: var(--color3);
         width: 100%;
-        padding: 1rem;
+        height: 10vh;
+        top: 0;
+        margin: 0 auto;
         display: flex;
-        justify-content:space-between;
-        h1{
-            /* word-break: break-all;  para que bajen de a una las letras */
-            /* box-shadow: rgb(0 0 0 / 50%) 12px 15px 13px;  para darle sombras a las cajas*/
-            font-size:var(--fontsLow);
-            font-family: var(--fontFamily);
-            color: var(--colorEnlaces);
-            width: 50%;
-            padding: 0;
-            margin: 0 auto 0  0 ;
-            @media only screen and (max-width: 680px){
-                font-size: var(--fontsXs);
-                // margin: 0 auto;
-                }
-        }
-        #check{
-            display: none;
-            &:checked ~ .navNav {
-                display: block;
-            }
-        }
-        .check{
-            margin: 0 10%;
-            height: 0;
-            cursor: pointer;
-            .fas{
-                color: #fff;
-            }
-        }
-        ul{
-            display:none;
-            position:absolute;
+        flex-wrap: wrap;
+        position: fixed;
+        z-index: 1;
+
+        .navContainerkk{
             width: 100%;
-            height: 60vh;
-            top: 3.1rem;
-            left: 0rem;
-            background-color: rgba(0, 0, 0, .70);
-            text-align: center;
-            li{
-                line-height: 4rem;
-                list-style: none;                
+            padding: 1rem;
+            display: flex;
+            justify-content:space-between;
+            h1{
+                /* word-break: break-all;  para que bajen de a una las letras */
+                /* box-shadow: rgb(0 0 0 / 50%) 12px 15px 13px;  para darle sombras a las cajas*/
+                font-size:var(--fontsLow);
+                font-family: var(--fontFamily);
+                color: var(--colorEnlaces);
+                width: 50%;
+                padding: 0;
+                margin: 0 auto 0  0 ;
+                @media only screen and (max-width: 680px){
+                    font-size: var(--fontsXs);
+                    // margin: 0 auto;
+                    }
             }
-            a{
-                color: var(--color2);
-                text-decoration: none;
+            #check{
+                display: none;
+                &:checked ~ .navNav {
+                    display: block;
+                }
+            }
+            .check{
+                margin: 0 10%;
+                height: 0;
+                cursor: pointer;
+                .fas{
+                    color: #fff;
+                }
+            }
+            ul{
+                display:none;
+                position:absolute;
+                width: 100%;
+                height: 60vh;
+                top: 3.1rem;
+                left: 0rem;
+                background-color: rgba(0, 0, 0, .70);
+                text-align: center;
+                li{
+                    line-height: 4rem;
+                    list-style: none;                
+                }
+                a{
+                    color: var(--color2);
+                    text-decoration: none;
+                }
             }
         }
     }
-}
 
-// INICIO DE NOVEDADES
+    // INICIO DE SECCION NOVEDADES
 
-.novedadesContainer{
+    .novedadesContainer{
         display: grid;
         grid-template-areas: 
-        "carrusel carrusel carrusel carrusel"
-        "video video video video"
-        "foto1 foto1 foto2 foto2"
-        "foto3 foto3 fotoGuion fotoGuion"
-        "foto3 foto3 fotoA fotoB"
-        "banner banner banner banner";
-        margin-top: 0rem;
-
-    }
-    .carrusel{
-        grid-area: carrusel;
-        border: solid 2px red;
-        width: 100%;
+        "banner1 banner1 banner1 banner1 banner1"
+        ;
+        width: 90%;
         margin: auto;
-        .slide{
-            .carousel-inner{
-                .carousel-item{
+        .banner1{
+            grid-area:banner1;
+            background: rgba(128, 128, 128, 0.185);
+            margin-top: 10rem;
+            width: 100%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap-reverse;
+
+            .descripcion{
+                width: 30rem;
+                @media only screen and(max-width:1024px){
+                    width: 20rem;
+                }
+                @media only screen and(max-width:768px){
+                    width: 15rem;
+                }
+                @media only screen and(max-width:320px){
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                h2{
+                    width: 100%;
+                    margin: 3rem 0 0 0;
+                    font-size:3rem;
+                    @media only screen and(max-width:1024px){
+                        font-size: var(--fontsHigh);
+                    }
+                    @media only screen and(max-width:768px){
+                        font-size: var(--fontsMediun);
+                    }
+                    @media only screen and(max-width:320px){
+                        font-size: var(--fontsXs);
+                    }
+                }
+                p{
+                    font-size: var(--fontsLow);
+                    padding: 2rem 0 2rem 0;
+                    @media only screen and(max-width:1024px){
+                        font-size: var(--fontsLow);
+                    }
+                    @media only screen and(max-width:320px){
+                        font-size: var(--fontsXs);
+                        padding: 0;
+                    }
+                }
+                a{
+                    width: 50%;
+                    background: #001e2d;
+                    padding: 1rem 3rem;
+                    color: #fff;
+                    font-size: var(--fontsMediun);
+                    text-decoration: none;
+                    @media only screen and(max-width:768px){
+                        font-size: var(--fontsXs);
+                        padding: 1.5% 5%;
+                        margin-bottom: 10rem;
+                    }
+                    @media only screen and(max-width:320px){
+                        font-size: var(--fontsXs);
+                    }
+                }
+            }
+            .fotoDescripcion{
+                border: solid 2px red;
+                width: 40rem;
+                height: auto;
+                margin: 2rem  0 2rem 2rem;
+                img{
+                    width: 100%;
+
+                }
+                @media only screen and(max-width:1024px){
+                    width: 25em;
+                }
+                @media only screen and(max-width:768px){
+                    width: 20em;
+                }
+                @media only screen and(max-width:425px){
+                    margin: auto;
+                    width: 17rem;
+                }
+            }
+        }        
+    }
+
+    // INICIO GUIA DE JARDINERIA
+
+    #guiaJardineria{
+
+        .guiaJarContainer{
+            display: grid;
+            grid-template-areas: 
+            "foto1 foto2 foto3"
+            "foto4 foto5 foto6";
+            width: 80%;
+            margin: 0 auto;
+            border: red solid 3px;
+            overflow: hidden;
+            @media only screen and (max-width:1440px){
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .foto1{
+                grid-area: foto1;
+            }
+            .foto2{
+                grid-area: foto2;
+            }
+            .foto3{
+                grid-area: foto3;
+            }
+            .foto4{
+                grid-area: foto4;
+            }
+            .foto5{
+                grid-area: foto5;
+            }
+            .foto6{
+                grid-area: foto6;
+            }
+
+            .box{
+                background: #001e2d8e;
+                color:#f8f8f8;
+                margin: 0 auto;
+                width: 24rem;
+                height: 31rem;
+                margin-top: 3rem;
+                overflow:hidden ;
+                position: relative;
+                @media only screen and(max-width:425px){
+                    height: 22.5rem;
+                }
+
+                h2{
+                    margin: 2rem auto 2rem auto;
+                    position: absolute;
+                    color:#f8f8f8;
+                    @media only screen and(max-width:425px){
+                        margin-top: 0.5rem;
+                    }
+                }
+                p{
+                    margin-top: 10rem;
+                    color: #b1eb55;
+                    @media only screen and(max-width:425px){
+                        font-size: var(--fontsXs);
+                        margin-top: 9rem;
+
+                    }
+                }
+
+                .imgContainer{
+                    height: 70vh;
+                    overflow: hidden;
+                    position: absolute;
+                    &:hover{
+                        transform: translateX(25rem);
+                        transition: all 1.5s ease-in-out;
+                    }
+                    @media only screen and(max-width:1440px){
+                        height: 95vh;
+                    }
                     img{
                         width: 100%;
-                        height: 80vh;
+                            
                     }
                 }
             }
         }
     }
-    .video{
-        grid-area: video;
-        border: solid 2px red;
-        width: 100%;
-        video{
-            width: 100%;
-        }
-
-    }
-    .foto1{
-        grid-area: foto1;
-        border: solid 2px red;
-        width: 100%;
-        img{
-            width: 100%;
-            
-        }
-    }
-    .foto2{
-        grid-area: foto2;
-        border: solid 2px red;
-        width: 100%;
-        img{
-            width: 100%;
-            
-        }
-    }
-    .foto3{
-        grid-area: foto3;
-        border: solid 2px red;
-        width: 100%;
-        height: 10rem;
-        background-image: url(../../img/decoracion/mmmmmaaaaaaa.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        img{
-            width: 100%;
-            
-        }
-    }
-    .fotoGuion{
-        grid-area: fotoGuion;
-        border: solid 2px red;
-        width: 100%;
-        margin: auto;
-        img{
-            width: 100%;
-            margin: auto;
-        }
-    }
-    .fotoA{
-        grid-area: fotoA;
-        border: solid 2px red;
-        width: 100%;
-        img{
-            width: 100%;
-            margin: auto;
-        }
-    }
-    .fotoB{
-        grid-area: fotoB;
-        border: solid 2px red;
-        background: cadetblue;
-    
-    
-    }
-    .banner{
-        grid-area: banner;
-        border: solid 2px red;
-        width: 100%;
-        img{
-            width: 100%;
-        }
-    }
+}
