@@ -177,7 +177,8 @@
             "foto4 foto5 foto6";
             width: 80%;
             margin: 0 auto;
-            border: red solid 3px;
+            // border: red solid 3px;
+            background: rgba(128, 128, 128, 0.185);
             overflow: hidden;
             @media only screen and (max-width:1440px){
                 display: flex;
@@ -214,7 +215,6 @@
                 @media only screen and(max-width:425px){
                     height: 22.5rem;
                 }
-
                 h2{
                     margin: 2rem auto 2rem auto;
                     position: absolute;

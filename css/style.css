@@ -912,7 +912,7 @@ footer .container .row .col p a {
   grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6";
   width: 80%;
   margin: 0 auto;
-  border: red solid 3px;
+  background: rgba(128, 128, 128, 0.185);
   overflow: hidden;
 }
 @media only screen and (max-width: 1440px) {
