@@ -1,7 +1,6 @@
 
 /* Inicio Main */
 
-
 .iconoMovil{
     background-image: url(https://i.ibb.co/PQjYd6h/favicon-16x16.png);
     background-repeat: no-repeat;
@@ -20,20 +19,13 @@
 }
 
 .containerImg{
-    padding-top: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;  
-    margin: 0 auto;
-    background-size: contain;
-    
     img{
         background-position: center center;
         width: 100%;
         border-radius: 0 0 1rem 1rem;
-        margin: 8rem 0 10rem 0;
+        margin: 0rem 0 10rem 0;
         @media only screen and(max-width: 768px){
-            margin: 7rem auto 2rem auto;
+            margin: 2rem auto 2rem auto;
         }
     }
 }

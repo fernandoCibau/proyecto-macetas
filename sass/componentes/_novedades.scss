@@ -4,6 +4,7 @@
 .bodyNovedades{
     background-image:radial-gradient( circle at 50% 50%, rgb(191, 230, 222) 0.1%, rgba(11, 59, 53, 0.726) 100% );
     margin: auto;
+
     .headerContainerkk{
         background-color: var(--color3);
         width: 100%;
@@ -20,6 +21,7 @@
             padding: 1rem;
             display: flex;
             justify-content:space-between;
+
             h1{
                 /* word-break: break-all;  para que bajen de a una las letras */
                 /* box-shadow: rgb(0 0 0 / 50%) 12px 15px 13px;  para darle sombras a las cajas*/
@@ -28,10 +30,13 @@
                 color: var(--colorEnlaces);
                 width: 50%;
                 padding: 0;
-                margin: 0 auto 0  0 ;
+                margin: auto;
+                text-align: center;
+                @media only screen and(max-width: 767px){
+                    margin: 0 auto 0 0  ;
+                }
                 @media only screen and (max-width: 680px){
                     font-size: var(--fontsXs);
-                    // margin: 0 auto;
                     }
             }
             #check{
@@ -41,25 +46,39 @@
                 }
             }
             .check{
-                margin: 0 10%;
-                height: 0;
-                cursor: pointer;
+                display: none;  //este se puso ahora
+
+                @media only screen and(max-width:767px){
+                    display: block;
+                    margin: 0 10%;
+                    height: 0;
+                    cursor: pointer;
+                }
                 .fas{
                     color: #fff;
                 }
             }
             ul{
-                display:none;
-                position:absolute;
                 width: 100%;
-                height: 60vh;
                 top: 3.1rem;
                 left: 0rem;
-                background-color: rgba(0, 0, 0, .70);
+                margin: auto;
+                display: flex;
+                justify-content:space-evenly;
+
+                @media only screen and(max-width:767px){
+                display:none;
+                position:absolute;
                 text-align: center;
+                height: 60vh;
+                background-color: rgba(0, 0, 0, .70);
+                }
+
                 li{
-                    line-height: 4rem;
-                    list-style: none;                
+                    list-style: none;
+                    @media only screen and(max-width:767px){
+                        line-height: 4rem;
+                    }
                 }
                 a{
                     color: var(--color2);
@@ -144,7 +163,6 @@
                 }
             }
             .fotoDescripcion{
-                border: solid 2px red;
                 width: 40rem;
                 height: auto;
                 margin: 2rem  0 2rem 2rem;
@@ -177,7 +195,6 @@
             "foto4 foto5 foto6";
             width: 80%;
             margin: 0 auto;
-            // border: red solid 3px;
             background: rgba(128, 128, 128, 0.185);
             overflow: hidden;
             @media only screen and (max-width:1440px){
@@ -204,12 +221,13 @@
             }
 
             .box{
+                // box-shadow: rgb(0 0 0 / 50%) 12px 15px 13px;
+                box-shadow: rgb(0 0 0 / 50%) 12px 15px 15px;
                 background: #001e2d8e;
                 color:#f8f8f8;
-                margin: 0 auto;
+                margin:3rem auto ;
                 width: 24rem;
                 height: 31rem;
-                margin-top: 3rem;
                 overflow:hidden ;
                 position: relative;
                 @media only screen and(max-width:425px){
